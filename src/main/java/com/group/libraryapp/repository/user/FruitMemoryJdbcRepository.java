@@ -1,18 +1,17 @@
+/*
 package com.group.libraryapp.repository.user;
 
 import com.group.libraryapp.dto.user.response.FruitResponse;
-import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 
 @Repository
-@Primary
-public class FruitMemoryRepository implements FruitRepository {
+public class FruitMemoryJdbcRepository implements FruitJdbcRepository {
 
     private final JdbcTemplate jdbcTemplate;
-    public FruitMemoryRepository(JdbcTemplate jdbcTemplate) {
+    public FruitMemoryJdbcRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
@@ -42,3 +41,4 @@ public class FruitMemoryRepository implements FruitRepository {
     }
 
 }
+ */

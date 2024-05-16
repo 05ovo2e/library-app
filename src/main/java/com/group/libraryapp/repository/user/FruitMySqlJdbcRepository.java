@@ -1,7 +1,9 @@
+/*
 package com.group.libraryapp.repository.user;
 
 import com.group.libraryapp.dto.user.request.FruitGroupby;
 import com.group.libraryapp.dto.user.response.FruitResponse;
+import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -9,11 +11,11 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Repository
-
-public class FruitMySqlRepository implements FruitRepository {
+@Primary
+public class FruitMySqlJdbcRepository implements FruitJdbcRepository {
 
     private final JdbcTemplate jdbcTemplate;
-    public FruitMySqlRepository(JdbcTemplate jdbcTemplate) {
+    public FruitMySqlJdbcRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
@@ -68,7 +70,7 @@ public class FruitMySqlRepository implements FruitRepository {
         return new FruitResponse(salesAmount, notSalesAmount);
 
 
-        /*
+      // 구분
         List<Fruit> responses = jdbcTemplate.query(sql, (rs, rowNum) -> {
             boolean purchase = rs.getBoolean("purchase");
             long price = rs.getLong("price");
@@ -86,9 +88,11 @@ public class FruitMySqlRepository implements FruitRepository {
 
         return new FruitResponse(salesAmount, notSalesAmount);
 
-         */
+
 
 
     }
 
 }
+
+*/

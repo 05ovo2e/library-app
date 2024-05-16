@@ -1,4 +1,5 @@
 package com.group.libraryapp.dto.user.response;
+import com.group.libraryapp.domain.fruit.Fruit;
 
 public class FruitResponse {
     private long salesAmount;
@@ -9,6 +10,12 @@ public class FruitResponse {
         this.notSalesAmount = notSalesAmount;
     }
 
+    public FruitResponse(Fruit fruit) {
+        this.salesAmount = salesAmount;
+        this.notSalesAmount = notSalesAmount;
+
+    }
+
     public long getSalesAmount() {
         return salesAmount;
     }
@@ -16,4 +23,5 @@ public class FruitResponse {
     public long getNotSalesAmount() {
         return notSalesAmount;
     }
+
 }

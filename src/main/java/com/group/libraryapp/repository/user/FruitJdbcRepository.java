@@ -1,10 +1,11 @@
+/*
 package com.group.libraryapp.repository.user;
 
 import com.group.libraryapp.dto.user.response.FruitResponse;
 
 import java.time.LocalDate;
 
-public interface FruitRepository {
+public interface FruitJdbcRepository {
 
     public boolean isFruitNotExist(long id);
     public boolean isFruitNotExist(String name);
@@ -13,3 +14,4 @@ public interface FruitRepository {
     public FruitResponse getFruit(String name);
 
 }
+*/
